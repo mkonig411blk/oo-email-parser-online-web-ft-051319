@@ -14,7 +14,7 @@ class EmailParser
     if @emails.count(" ") > 0
       @emails.split(" ")
     elsif @emails.count(",") > 0
-      @emails.split(",")
+      @emails.split(", ")
   end
   end
     
