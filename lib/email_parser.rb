@@ -10,9 +10,9 @@ class EmailParser
   end
   
   def parse
-    if @list.find {|x| x == " "} != nil
+    if @list.detect {|x| x == " "} != nil
       @list.split(" ")
-    elsif @list.find {|x| x == ","}
+    elsif @list.detect {|x| x == ","}
     @list.split(",")
   end
   end
