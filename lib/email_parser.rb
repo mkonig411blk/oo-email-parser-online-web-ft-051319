@@ -16,7 +16,9 @@ class EmailParser
       returnArr = splitEmail.flatten.uniq
       returnArr
   end
-  
+  "avi@test.com, arel@test.com test@avi.com, test@arel.com"
+  = ["avi@test.com,", "arel@test.com","test@avi.com,","test@arel.co"]
+  = [["avi@test.com"],"arel@test.com",["test@avi.com"],"test@arel.co"]
   
     
 end
