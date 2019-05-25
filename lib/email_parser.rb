@@ -6,11 +6,13 @@
 class EmailParser
   
   def initialize(list)
-    @list = list.split(" ") 
-    @list
+    @list = list
   end
   
   def parse
+    if @list.find {|x| x == ' '}
+      @list.split(" ")
+    elsif @list.find {|x| x == 
   end
     
 end
