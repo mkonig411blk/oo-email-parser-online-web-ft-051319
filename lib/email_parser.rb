@@ -11,10 +11,10 @@ class EmailParser
   end
   
   def parse
-    if @list.count(" ") > 0
-      @list.split(" ")
-    elsif @list.count(",") > 0
-      @list.split(",")
+    if @emails.count(" ") > 0
+      @emails.split(" ")
+    elsif @emails.count(",") > 0
+      @emails.split(",")
   end
   end
     
