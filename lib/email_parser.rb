@@ -10,9 +10,9 @@ class EmailParser
   end
   
   def parse
-    if @list.find {|x| x == ' '}
+    if @list.find {|x| x == " "}
       @list.split(" ")
-    elsif @list.find {|x| x == ','}
+    elsif @list.find {|x| x == ","}
     @list.split(",")
   end
   end
