@@ -11,11 +11,9 @@ class EmailParser
   end
   
   def parse
-     if @emails.count(",") > 0
-      @emails.split(", ")
-    elsif @emails.count(" ") > 0
-      @emails.split(" ")
-  end
+       puts splitEmail = emails.split.collect {|address| address.split(',')} 
+      returnArr = splitEmail.flatten.uniq
+      returnArr
   end
     
 end
